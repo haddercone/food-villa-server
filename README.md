@@ -1,4 +1,4 @@
-## Food villas server is free server to get the restauramt details from the Swiggy API without any CORS issues.
+## Food villa server is free server to get the restauramt details from the Swiggy API without any CORS issues.
 
 ## The server provider two URLs
 
