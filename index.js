@@ -3,7 +3,9 @@ const fetch = require("cross-fetch");
 const cors = require("cors");
 const app = express();
 
-app.use(cors());
+app.use(cors({
+	origin:"*"
+}));
 
 const port = process.env.port || 3000;
 
@@ -35,7 +37,8 @@ app.get("/api/restaurants", (req, res) => {
 
 app.get("/api/restaurant/menu", (req, res) => {
 	const { lat, lng, menuId } = req.query;
-	const URL = `https://www.swiggy.com/dapi/menu/v4/full?lat=${lat}4&lng=${lng}&menuId=${menuId}`;
+	const URL = `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=${lat}&lng=${lng}&restaurantId=${menuId}&catalog_qa=undefined&submitAction=ENTER`
+	// const URL = `https://www.swiggy.com/dapi/menu/v4/full?lat=${lat}4&lng=${lng}&menuId=${menuId}`;
 
 	fetch(URL, {
 		headers: {
