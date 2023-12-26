@@ -31,6 +31,6 @@
 
 
 
-## If you find this repo helpfull then pleaase give it a :star:
+## If you find this repo helpfull then please give it a :star:
 
 
