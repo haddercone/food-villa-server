@@ -10,9 +10,9 @@
     >
     > @return : list of restaurant
 
-    URL endpoint : `https://food-villa-server.vercel.app/api/restaurants?lat=<latitude>&lng=<longitude>&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`
+    URL endpoint : `https://food-villa-server.vercel.app/api/restaurants?lat=<latitude>&lng=<longitude>`
 
-    example: `https://food-villa-server.vercel.app/api/restaurants?lat=28.4594965&lng=77.0266383&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`
+    example: `https://food-villa-server.vercel.app/api/restaurants?lat=28.4594965&lng=77.0266383`
 
 
 - Get Menu of a specific restaurant by latitude, longitude and menuId(restaurantId in swiggy original URL).
