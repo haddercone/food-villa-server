@@ -12,8 +12,7 @@ const port = process.env.port || 3000;
 app.get("/api/restaurants", (req, res) => {
 	const { lat, lng } = req.query;
 	console.log(req.query);
-
-	const URL = `https://www.swiggy.com/dapi/restaurants/list/v5?lat=${lat}&lng=${lng}&offset=15&sortBy=RELEVANCE&pageType=SEE_ALL&page_type=DESKTOP_SEE_ALL_LISTING`;
+	const URL = `https://www.swiggy.com/api/seo/getListing?lat=${lat}&lng=${lng}`
 
 	fetch(URL, {
 		headers: {
